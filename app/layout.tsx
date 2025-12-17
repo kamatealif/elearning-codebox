@@ -5,6 +5,7 @@ import {
   DM_Sans,
   Pixelify_Sans,
   Inter,
+  Jersey_10,
 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -16,9 +17,10 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const gameFont = Pixelify_Sans({
+const gameFont = Jersey_10({
   variable: "--font-game",
   subsets: ["latin"],
+  weight: ["400"],
 });
 
 const inter = Inter({
